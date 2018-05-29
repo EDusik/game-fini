@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour {
     public float maxWidth;
     public float minWidth;
     private float posY = -4;
+    private int score;
+    public TextMesh pontos;
 
     void Start() {
         Anim = GetComponent<Animator>();
@@ -21,9 +23,8 @@ public class PlayerController : MonoBehaviour {
 
         float translationX = Input.GetAxis("Horizontal") * speed;
         transform.Translate(translationX, 0.0f, 0.0f);
-
-
-       // player.transform.Translate(0, translationX, 0);
+        
+        // player.transform.Translate(0, translationX, 0);
 
         if (player.transform.position.x > maxWidth) {
             player.transform.position = new Vector2(maxWidth, posY);
@@ -45,10 +46,21 @@ public class PlayerController : MonoBehaviour {
             Anim.SetTrigger("Parado");
         }
 
+        pontos.text = score.ToString();
+
         if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D)) 
             Anim.ResetTrigger("Direita");
         if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A))
             Anim.ResetTrigger("Esquerda");
+    }
 
+
+
+    void OnTriggerEnter2D(Collider2D col) {
+        if (col.tag == "candy") {
+            score += 10;
+            Debug.Log(score);
+            Destroy(col.gameObject);            
+        }
     }
 }
