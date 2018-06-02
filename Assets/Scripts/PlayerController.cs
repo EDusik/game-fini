@@ -58,8 +58,8 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col) {
         if (col.tag == "candy") {
-            score += 10;
-            Debug.Log(score);
+            score += 5;
+           // Debug.Log(score);
             Destroy(col.gameObject);            
         }
     }

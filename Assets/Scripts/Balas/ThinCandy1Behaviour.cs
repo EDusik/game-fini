@@ -5,6 +5,7 @@ using UnityEngine;
 public class ThinCandy1Behaviour : MonoBehaviour {
 
     public GameObject ThinCandy1;
+    public GameObject BarraDeVida;
     public float speed;
 
     // Use this for initialization
@@ -18,7 +19,6 @@ public class ThinCandy1Behaviour : MonoBehaviour {
 
         if (transform.position.y < -12) {
             Destroy(ThinCandy1.gameObject);
-
         }
     }
 }
