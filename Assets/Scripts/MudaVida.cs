@@ -24,8 +24,7 @@ public class MudaVida : MonoBehaviour {
             Destroy(col.gameObject);
             BarraVida.fillAmount = (vida / 100);
             if (vida < 1) {
-                //UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
-                Debug.Log("End");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
             }
         }
     }

@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour {
     public float maxWidth;
     public float minWidth;
     private float posY = -4;
-    private int score;
+    public static int score;
     public TextMesh pontos;
 
     void Start() {
@@ -53,9 +53,7 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A))
             Anim.ResetTrigger("Esquerda");
     }
-
-
-
+    
     void OnTriggerEnter2D(Collider2D col) {
         if (col.tag == "candy") {
             score += 5;

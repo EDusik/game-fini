@@ -80,10 +80,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Balas\SpanThinCandy1.cs" />
     <Compile Include="Assets\Scripts\Balas\ThinCandy1Behaviour.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\MudaVida.cs" />
     <Compile Include="Assets\Scripts\Nuvem\NuvemBehaviour.cs" />
     <Compile Include="Assets\Scripts\Nuvem\SpanNuvem.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\StartGame.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
