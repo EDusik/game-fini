@@ -20,7 +20,7 @@ public class SpanThinCandy1 : MonoBehaviour {
             GameObject tc = thinCandy1;
             // Vector3 spawnPosition = new Vector3(-12.0f, Random.Range(9.5f, 5.0f), 7);
            // Vector3 spawnPosition = new Vector3(-12.0f, Random.Range(9.5f, 5.0f), 7);
-            Vector3 spawnPosition = new Vector3(Random.Range(-8.0f, 7.0f), 13);
+            Vector3 spawnPosition = new Vector3(Random.Range(-5.75f, 5.75f), 13);
 
 
             Quaternion spawnRotation = Quaternion.identity;

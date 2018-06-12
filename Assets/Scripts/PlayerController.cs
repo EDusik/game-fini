@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
 
     public float maxWidth;
     public float minWidth;
-    private float posY = -4;
+    private float posY = -5;
     public static int score;
     public TextMesh pontos;
 
