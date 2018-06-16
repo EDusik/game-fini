@@ -12,11 +12,11 @@ public class PlayerController : MonoBehaviour {
     public float maxWidth;
     public float minWidth;
     private float posY = -5;
-    public static int score;
-    public TextMesh pontos;
+    //static int score;
+    //public TextMesh pontos;
 
     void Start() {
-        Anim = GetComponent<Animator>();
+        Anim = GetComponent<Animator>();       
     }
 
     void Update() {
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour {
             Anim.SetTrigger("Parado");
         }
 
-        pontos.text = score.ToString();
+       // pontos.text = score.ToString();
 
         if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D)) 
             Anim.ResetTrigger("Direita");
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour {
     
     void OnTriggerEnter2D(Collider2D col) {
         if (col.tag == "candy") {
-            score += 5;
+           // score += 5;
            // Debug.Log(score);
             Destroy(col.gameObject);            
         }

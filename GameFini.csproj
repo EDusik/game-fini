@@ -85,6 +85,8 @@
     <Compile Include="Assets\Scripts\Nuvem\NuvemBehaviour.cs" />
     <Compile Include="Assets\Scripts\Nuvem\SpanNuvem.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Pontuacao.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundController.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
