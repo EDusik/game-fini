@@ -20,7 +20,19 @@ public class Pontuacao : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col) {
         if (col.tag == "candy") {
-             score += 5;
+             score += 10;
+        }
+
+        if (col.tag == "candy2") {
+            score += 50;
+        }
+
+        if (col.tag == "candy3") {
+            score += 25;
+        }
+
+        if (col.tag == "candy4") {
+            score += 5;
         }
     }
       

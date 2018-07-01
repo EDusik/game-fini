@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour {
     public float maxWidth;
     public float minWidth;
     private float posY = -5;
+    private int controlerSpeed;
+    private bool candyTest = true;
     //static int score;
     //public TextMesh pontos;
 
@@ -55,10 +57,19 @@ public class PlayerController : MonoBehaviour {
     }
     
     void OnTriggerEnter2D(Collider2D col) {
-        if (col.tag == "candy") {
-           // score += 5;
-           // Debug.Log(score);
-            Destroy(col.gameObject);            
+        if (col.tag == "candy" || col.tag == "candy2" || col.tag == "candy3" || col.tag == "candy4") {
+            Destroy(col.gameObject);
+        }
+
+        if(col.tag == "candy2" && candyTest) {           
+            speed += 0.2f;
+            candyTest = false;
+        }
+
+        if (col.tag == "candy" && !candyTest || col.tag == "candy4" && !candyTest) {
+            speed -= 0.2f;
+            candyTest = true;
         }
     }
+
 }

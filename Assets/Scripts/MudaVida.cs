@@ -19,7 +19,7 @@ public class MudaVida : MonoBehaviour {
 	}
 
     void OnTriggerEnter2D(Collider2D col) {
-        if (col.tag == "candy") {
+        if (col.tag == "candy" || col.tag == "candy2" || col.tag == "candy3" || col.tag == "candy4") {
             vida -= 20;
             Destroy(col.gameObject);
             BarraVida.fillAmount = (vida / 100);
