@@ -1,6 +1,6 @@
 <div id="about"> 
 
-## :page_facing_up: About
+## :candy: About
 Advergame made for course digital games from college based on candy company <i>Fini</i>
 </div>
 
