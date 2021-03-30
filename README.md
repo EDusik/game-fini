@@ -1,8 +1,5 @@
-<div id="about"> 
-
 ## :candy: About
 Advergame made for course digital games from college based on candy company <i>Fini</i>
-</div>
 
 <div id="game">
     <div align="center">
@@ -10,10 +7,8 @@ Advergame made for course digital games from college based on candy company <i>F
     </div>
 </div>
 
-<div id="technologies"> 
-
 ## :rocket: Technologies
 This project uses these technologies:
 - [C#](https://docs.microsoft.com/pt-br/dotnet/csharp/)
 - [Unity](https://unity.com/pt)
-</div>
+- 
