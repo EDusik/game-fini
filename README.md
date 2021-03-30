@@ -11,4 +11,3 @@ Advergame made for course digital games from college based on candy company <i>F
 This project uses these technologies:
 - [C#](https://docs.microsoft.com/pt-br/dotnet/csharp/)
 - [Unity](https://unity.com/pt)
-- 
